@@ -14,19 +14,20 @@
 <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js" ></script> 
     <script type=’application/javascript’>
       ////this.userID, UUID4 value recommended
-    var options = {
+   function adStatusCallback(status) {
+        console.log('Ad Status: ' + status);
+    }
+      var options = {
         zoneId: 2050,
-        userId: 125478963215456987,
+        userId: crypto.randomUUID(),
         accountId: 8041,
         siteId: 8568,
         adStatusCb: adStatusCallback
-};
+      };
 
-    <button type="button" id="showRewardAdButton">Show Reward Ad</button>
+    //<button type="button" id="showRewardAdButton">Show Reward Ad</button>
 
-    function adStatusCallback(status) {
-        console.log('Ad Status: ' + status);
-    }
+    
 function adslll() {
          invokeApplixirVideoUnit(options);
     }
