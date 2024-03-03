@@ -10,10 +10,11 @@
     <div id="applixir_vanishing_div" hidden>
     <iframe id="applixir_parent" ></iframe>
 </div>
-<button type="button" id="showRewardAdButton">Show Reward Ad</button>
+<button type="button" onClick ="adslll()"id="showRewardAdButton">Show Reward Ad</button>
 
 <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js" ></script> 
-    <script type=’application/javascript’>
+    <script>
+    //<script type=’application/javascript’>
       ////this.userID, UUID4 value recommended
    function adStatusCallback(status) {
         console.log('Ad Status: ' + status);
@@ -32,11 +33,12 @@
 function adslll() {
          invokeApplixirVideoUnit(options);
     }
+      /*
     showRewardAdButton.onClick =
     function () {
         invokeApplixirVideoUnit(options);          //play the video ad
     };
-
+*/
 </script>
     <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
     <script src="Build/u0.loader.js"></script>
